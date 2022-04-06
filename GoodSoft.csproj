@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D0710EE-948B-416F-841D-5E979F4733A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GoodSoft</RootNamespace>
+    <AssemblyName>GoodSoft</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthorizationWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorizationWindow.Designer.cs">
+      <DependentUpon>AuthorizationWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase.cs" />
+    <Compile Include="DocumentsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocumentsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentsForm.Designer.cs">
+      <DependentUpon>DocumentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalValues.cs" />
+    <Compile Include="GroupsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GroupsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GroupsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupsForm.Designer.cs">
+      <DependentUpon>GroupsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ParentsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ParentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParentsForm.Designer.cs">
+      <DependentUpon>ParentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchForm_Parents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm_Parents.Designer.cs">
+      <DependentUpon>SearchForm_Parents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm_Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm_Students.Designer.cs">
+      <DependentUpon>SearchForm_Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialnostDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpecialnostDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialnostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialnostForm.Designer.cs">
+      <DependentUpon>SpecialnostForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsForm.Designer.cs">
+      <DependentUpon>StudentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsSearchForm.Designer.cs">
+      <DependentUpon>StudentsSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraceCheck.cs" />
+    <Compile Include="_31П_Проект_ДолгDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_31П_Проект_ДолгDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_31П_Проект_ДолгDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_31П_Проект_ДолгDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AuthorizationWindow.resx">
+      <DependentUpon>AuthorizationWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentsForm.resx">
+      <DependentUpon>DocumentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupsForm.resx">
+      <DependentUpon>GroupsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentsForm.resx">
+      <DependentUpon>ParentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SearchForm_Parents.resx">
+      <DependentUpon>SearchForm_Parents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm_Students.resx">
+      <DependentUpon>SearchForm_Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialnostForm.resx">
+      <DependentUpon>SpecialnostForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsForm.resx">
+      <DependentUpon>StudentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DocumentsDataSet.xsc">
+      <DependentUpon>DocumentsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DocumentsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DocumentsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DocumentsDataSet.xss">
+      <DependentUpon>DocumentsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GroupsDataSet.xsc">
+      <DependentUpon>GroupsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GroupsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GroupsDataSet.xss">
+      <DependentUpon>GroupsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ParentsDataSet.xsc">
+      <DependentUpon>ParentsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ParentsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ParentsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ParentsDataSet.xss">
+      <DependentUpon>ParentsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SpecialnostDataSet.xsc">
+      <DependentUpon>SpecialnostDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SpecialnostDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SpecialnostDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpecialnostDataSet.xss">
+      <DependentUpon>SpecialnostDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudentsDataSet.xsc">
+      <DependentUpon>StudentsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudentsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StudentsDataSet.xss">
+      <DependentUpon>StudentsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_31П_Проект_ДолгDataSet.xsc">
+      <DependentUpon>_31П_Проект_ДолгDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_31П_Проект_ДолгDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_31П_Проект_ДолгDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_31П_Проект_ДолгDataSet.xss">
+      <DependentUpon>_31П_Проект_ДолгDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_31П_Проект_ДолгDataSet1.xsc">
+      <DependentUpon>_31П_Проект_ДолгDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_31П_Проект_ДолгDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_31П_Проект_ДолгDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_31П_Проект_ДолгDataSet1.xss">
+      <DependentUpon>_31П_Проект_ДолгDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\2.png" />
+    <Content Include="Images\user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
